@@ -1,2 +1,2 @@
 # Synaestetik
-Embedded AV digital hardware made in Pure Data
+Embedded AV digital hardware made with Raspberry PI and Pure Data
