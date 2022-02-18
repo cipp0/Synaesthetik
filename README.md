@@ -10,7 +10,7 @@ https://user-images.githubusercontent.com/62714916/154669681-928305df-177c-4867-
 
 ## Features
 
-- 8 independent tracks with as many [Mutable Instruments Braids](https://mutable-instruments.net/modules/braids/) clone synthesizer with related synthesis engines:
+- 8 x independent tracks with as many [Mutable Instruments Braids](https://mutable-instruments.net/modules/braids/) clone synthesizer with related synthesis engines:
 	- CS-80 style sawtooth with notch filter
 	- Wave in continuous morphing between triangular, sawtooth,
 	square, pulse, with character control
@@ -35,12 +35,11 @@ https://user-images.githubusercontent.com/62714916/154669681-928305df-177c-4867-
 	- Cloud of sinusoidal grains
 	- Particle synthesis
 
-- 8 ADSR for each track
-- 8 Moog Ladder filter for each track
-- 8 multi-waves LFO for each track
-- 8 Euclidean sequencers with microtonal scale calculation
-- Global transport logic with BPM control
-- 10 different sends to FX for each synth:
+- 8 x ADSR for each track
+- 8 x Moog Ladder filter for each track
+- 8 x multi-waves LFO for each track
+- 8 x Euclidean sequencers with microtonal scale calculation
+- 10 x different sends to FX for each synth:
 	- Hall reverb (Reverb of the Rings module by Mutable Instruments)
 	- Plate reverb (ELSE)
 	- Delay with feedback (ELSE)
@@ -51,6 +50,30 @@ https://user-images.githubusercontent.com/62714916/154669681-928305df-177c-4867-
 	- Bitcrusher (ELSE)
 	- Downsampling (ELSE)
 	- Granulator (Clone of the Clouds module by Mutable Instruments)
+- 8 x Onset detection engine for each track that modulate the generation values of the visual shapes through an envelope with decay and range. The destinations of these values are thirty-three divided for the whole Ofelia algorithm:
+	- X-axis rotation of the background
+	- Y axis rotation of the background
+	- Z axis rotation of the background
+	- rendering mode (lines, plane and points)
+	- line width, transposition on the X axis
+	- transposition on the Y axis
+	- transposition on the Z axis
+	- repetition
+	- rotation on the X axis
+	- rotation on the Y axis
+	- rotation on the Z axis
+	- RGB values of the first form
+	- RGB values of the last form
+	- choice of shape
+	- radius of the sphere
+	- sides of the polygon of the sphere
+	- radius of the circle
+	- rim geometries
+	- XYZ values for all vertices of the triangle
+	- width and height of the top
+	- number of rows and columns of the plan.
+- Global transport logic with BPM control
+- Interactive GUI with buttons, sliders and knobs
 
 ## Hardware needs
 
@@ -60,7 +83,7 @@ https://user-images.githubusercontent.com/62714916/154669681-928305df-177c-4867-
 - 2 x Mini HDMI to standard HDMI cable
 - 2 x Female Jack TS Connector (optional)
 
-![plot](/img/screen2.png)
+![plot](/img/hw.png)
 
 
 ## Software needs
@@ -74,6 +97,7 @@ https://user-images.githubusercontent.com/62714916/154669681-928305df-177c-4867-
 - [Mi4PD set of externals](https://github.com/TheTechnobear/Mi4Pd)
 
 ## Screenshots
+![plot](/img/screen0.png)![plot](/img/screen1.png) ![plot](/img/screen2.png)
 
 
 
