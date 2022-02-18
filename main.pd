@@ -1,12 +1,10 @@
 #N canvas 274 395 719 170 10;
 #X declare -path abstractions;
-#X declare -path abstractions;
 #X declare -path iemguts;
 #X obj 534 22 declare -path abstractions;
 #X obj 436 26 loadbang;
-#N canvas 259 133 818 499 render 0;
-#X obj 500 500 declare -path abstractions;
-#X obj 0 0 seq-gui 1;
+#N canvas 521 190 818 499 render 0;
+#X obj 0 0 buttons;
 #X restore 16 49 pd render;
 #X obj 173 24 cpu;
 #X msg 430 95 \; pd dsp \$1 \;;
