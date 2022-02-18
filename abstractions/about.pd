@@ -1,0 +1,18 @@
+#N canvas 696 488 819 521 10;
+#X obj 143 141 pic 0 cippo.gif empty empty 0 0;
+#X obj 295 143 else/note 425 30 helvetica empty 0 0 0 0 0 100 150 100
+0 0 Francesco Casanova;
+#X obj 296 182 else/note 425 20 helvetica empty 0 0 0 0 0 100 150 100
+0 0 Musician - sound designer - developer;
+#X obj 295 212 else/note 425 20 helvetica empty 0 0 0 0 0 100 150 100
+0 0 francescocasanova@outlook.com;
+#X obj 478 241 else/note 425 20 helvetica empty 0 0 0 0 0 100 150 100
+0 0 bit-01.net;
+#X obj 295 242 else/note 425 20 helvetica empty 0 0 0 0 0 100 150 100
+0 0 github.com/cipp0;
+#X obj 682 17 else/button 100 70 255 255 255 128 128 159;
+#X obj 708 40 else/note 425 15 arial black 0 0 0 0 0 255 255 255 0
+0 BACK;
+#X obj 979 230 s menu;
+#X connect 6 0 8 0;
+#X coords 0 -1 1 1 800 480 2 0 0;

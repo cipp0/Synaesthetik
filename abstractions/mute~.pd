@@ -5,7 +5,7 @@
 #X obj 218 113 line~;
 #X obj 200 139 *~;
 #X obj 167 51 inlet~;
-#X obj 217 60 - 1;
+#X obj 218 63 - 1;
 #X connect 0 0 6 0;
 #X connect 2 0 3 0;
 #X connect 3 0 4 1;

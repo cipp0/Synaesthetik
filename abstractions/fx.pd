@@ -1,0 +1,215 @@
+#N canvas 593 404 1109 589 10;
+#X declare -lib iemlib;
+#X obj 0 123 cnv 15 798 120 empty empty empty 20 12 0 14 -253822 -66577
+0;
+#X obj 0 2 cnv 15 798 118 empty empty empty 20 12 0 14 -253822 -66577
+0;
+#X obj 397 246 cnv 15 404 120 empty empty empty 20 12 0 14 -253822
+-66577 0;
+#X obj 7 19 else/note 743 28 helvetica empty 1 0 0 0 1 100 150 100
+0 0 PLATE REVERB;
+#X obj 244 35 abcknob 0 70 0 1000 0 0 99i86668 76867867jk empty 0 -9
+0 10 -133153 -1 -1 4250 0;
+#X obj 421 35 abcknob 0 70 0 1 0 0 345b343363 35v4b5 empty 0 -9 0 10
+-133153 -1 -1 8100 0;
+#X obj 514 35 abcknob 0 70 0 1 0 0 j8yj8yjj8y j8yjj8yj8yjj8y7jyjy empty
+0 -9 0 10 -133153 -1 -1 11900 0;
+#X obj 332 35 abcknob 0 70 0 1000 0 0 i6ft6ti tfi6it6i empty 0 -9 0
+10 -133153 -1 -1 0 0;
+#X obj 611 35 abcknob 0 70 0 1 0 0 j7yj8y7j8y78y78yj8jy j78y8y78y empty
+0 -9 0 10 -133153 -1 -1 7400 0;
+#X obj 243 18 else/note 743 12 helvetica empty 0 0 0 0 0 100 150 100
+0 0 PRE-DELAY;
+#X obj 438 17 else/note 743 12 helvetica empty 0 0 0 0 0 100 150 100
+0 0 SIZE;
+#X obj 347 17 else/note 743 12 helvetica empty 0 0 0 0 0 100 150 100
+0 0 DAMP;
+#X obj 519 18 else/note 743 12 helvetica empty 0 0 0 0 0 100 150 100
+0 0 LP FILTER;
+#X obj 620 18 else/note 743 12 helvetica empty 0 0 0 0 0 100 150 100
+0 0 DRY/WET;
+#X obj 692 15 else/button 100 70 255 255 255 128 128 159;
+#X obj 718 38 else/note 425 15 arial black 0 0 0 0 0 255 255 255 0
+0 BACK;
+#X obj 7 67 else/button 150 40 246 246 246 128 128 159;
+#X obj 13 77 else/note 425 15 arial black 0 0 0 0 0 255 255 255 0 0
+EFFECT ROUTING;
+#X obj 170 58 tgl 50 0 empty empty MUTE 6 25 0 16 -253822 -1 -1 0 1
+;
+#X obj 925 248 fx_sr 1, f 81;
+#X obj 940 17 declare -lib iemlib;
+#X obj 6 135 else/note 743 28 helvetica empty 1 0 0 0 1 100 150 100
+0 0 HALL REVERB;
+#X obj 243 158 abcknob 0 70 0 127 0 0 99i86668 76867867jk empty 0 -9
+0 10 -133153 -1 -1 0 0;
+#X obj 420 158 abcknob 0 70 0 127 0 0 345b343363 35v4b5 empty 0 -9
+0 10 -133153 -1 -1 0 0;
+#X obj 513 158 abcknob 0 70 0 127 0 0 8j8jyj8yj j8yj8yjj8y7jyjy empty
+0 -9 0 10 -133153 -1 -1 0 0;
+#X obj 331 158 abcknob 0 70 0 127 0 0 i6ft6ti tfi6it6i empty 0 -9 0
+10 -133153 -1 -1 0 0;
+#X obj 610 158 abcknob 0 70 0 127 0 0 j7yj8y7j8y78y78yj8jy j78y8y78y
+empty 0 -9 0 10 -133153 -1 -1 0 0;
+#X obj 249 141 else/note 743 12 helvetica empty 0 0 0 0 0 100 150 100
+0 0 AMOUNT;
+#X obj 423 140 else/note 743 12 helvetica empty 0 0 0 0 0 100 150 100
+0 0 DIFFUSION;
+#X obj 346 140 else/note 743 12 helvetica empty 0 0 0 0 0 100 150 100
+0 0 TIME;
+#X obj 518 141 else/note 743 12 helvetica empty 0 0 0 0 0 100 150 100
+0 0 LP FILTER;
+#X obj 629 141 else/note 743 12 helvetica empty 0 0 0 0 0 100 150 100
+0 0 GAIN;
+#X obj 164 176 tgl 50 0 empty empty MUTE 6 25 0 16 -253822 -1 -1 0
+1;
+#X obj 1 246 cnv 15 393 120 empty empty empty 20 12 0 14 -253822 -66577
+0;
+#X obj 11 259 else/note 743 28 helvetica empty 1 0 0 0 1 100 150 100
+0 0 DELAY;
+#X obj 228 282 abcknob 0 70 0 127 0 0 434hrfh rh3rhr3 empty 0 -9 0
+10 -133153 -1 -1 0 0;
+#X obj 316 282 abcknob 0 70 0 127 0 0 i6ft6ti tfi6it6i empty 0 -9 0
+10 -133153 -1 -1 0 0;
+#X obj 227 265 else/note 743 12 helvetica empty 0 0 0 0 0 100 150 100
+0 0 TIME (ms);
+#X obj 300 264 else/note 743 12 helvetica empty 0 0 0 0 0 100 150 100
+0 0 FEEDBACK (ms);
+#X obj 11 307 else/button 150 40 246 246 248 128 128 159;
+#X obj 17 317 else/note 425 15 arial black 0 0 0 0 0 255 255 255 0
+0 EFFECT ROUTING;
+#X obj 167 298 tgl 50 0 empty empty MUTE 6 25 0 16 -253822 -1 -1 0
+1;
+#X obj 401 254 else/note 743 28 helvetica empty 1 0 0 0 1 100 150 100
+0 0 PING PONG DEL;
+#X obj 641 270 abcknob 0 70 0 127 0 0 i56i56i5 f3hr3h564u6i7 empty
+0 -9 0 10 -133153 -1 -1 4400 0;
+#X obj 721 270 abcknob 0 70 0 1 0 0 gj5757k k5y5jh56 empty 0 -9 0 10
+-133153 -1 -1 0 0;
+#X obj 646 253 else/note 743 12 helvetica empty 0 0 0 0 0 100 150 100
+0 0 TIME (ms);
+#X obj 723 252 else/note 743 12 helvetica empty 0 0 0 0 0 100 150 100
+0 0 FEEDBACK;
+#X obj 401 302 else/button 150 40 246 246 248 128 128 159;
+#X obj 407 312 else/note 425 15 arial black 0 0 0 0 0 255 255 255 0
+0 EFFECT ROUTING;
+#X obj 567 293 tgl 50 0 empty empty MUTE 6 25 0 16 -262144 -1 -1 0
+1;
+#X obj 397 369 cnv 15 404 108 empty empty empty 20 12 0 14 -253822
+-66577 0;
+#X obj 1 369 cnv 15 393 108 empty empty empty 20 12 0 14 -253822 -66577
+0;
+#X obj 11 383 else/note 743 28 helvetica empty 1 0 0 0 1 100 150 100
+0 0 BITCRUSHER;
+#X obj 228 406 abcknob 0 70 0 127 0 0 h53h35h herhd53 empty 0 -9 0
+10 -133153 -1 -1 3400 0;
+#X obj 316 406 abcknob 0 70 0 127 0 0 54hy45hg h4h45h325 empty 0 -9
+0 10 -133153 -1 -1 6200 0;
+#X obj 238 389 else/note 743 12 helvetica empty 0 0 0 0 0 100 150 100
+0 0 CRUSH;
+#X obj 311 388 else/note 743 12 helvetica empty 0 0 0 0 0 100 150 100
+0 0 DECIMATION;
+#X obj 11 431 else/button 150 40 246 246 248 128 128 159;
+#X obj 17 441 else/note 425 15 arial black 0 0 0 0 0 255 255 255 0
+0 EFFECT ROUTING;
+#X obj 167 421 tgl 50 0 empty empty MUTE 6 25 0 16 -253822 -1 -1 0
+1;
+#X obj 401 378 else/note 743 28 helvetica empty 1 0 0 0 1 100 150 100
+0 0 DOWNSAMPLING;
+#X obj 656 401 abcknob 0 70 0 44100 0 0 v34g34g g3445gh43 empty 0 -9
+0 10 -133153 -1 -1 4100 0;
+#X obj 645 384 else/note 743 12 helvetica empty 0 0 0 0 0 100 150 100
+0 0 SAMPLING-RATE;
+#X obj 401 426 else/button 150 40 246 246 248 128 128 159;
+#X obj 407 436 else/note 425 15 arial black 0 0 0 0 0 255 255 255 0
+0 EFFECT ROUTING;
+#X obj 567 417 tgl 50 0 empty empty MUTE 6 25 0 16 -262144 -1 -1 0
+1;
+#X obj 6 185 else/button 150 40 246 246 248 128 128 159;
+#X obj 12 195 else/note 425 15 arial black 0 0 0 0 0 255 255 255 0
+0 EFFECT ROUTING;
+#X obj 742 408 tgl 50 0 empty empty INTERP 3 25 0 12 -262144 -1 -1
+0 1;
+#X obj 693 141 else/button 100 70 255 255 255 128 128 159;
+#X obj 702 163 else/note 425 15 arial black 0 0 0 0 0 255 255 255 0
+0 FX PAGE 2;
+#X obj 968 51 t b;
+#X obj 968 74 s fx-back;
+#X obj 911 145 t b;
+#X obj 911 170 s page2;
+#X obj 43 498 t b;
+#X obj 43 523 s route1;
+#X obj 115 498 t b;
+#X obj 115 523 s route2;
+#X obj 176 497 t b;
+#X obj 248 497 t b;
+#X obj 312 498 t b;
+#X obj 384 498 t b;
+#X obj 176 522 s route3;
+#X obj 384 523 s route6;
+#X obj 314 524 s route5;
+#X obj 248 522 s route4;
+#X connect 4 0 19 0;
+#X connect 5 0 19 2;
+#X connect 6 0 19 3;
+#X connect 7 0 19 1;
+#X connect 8 0 19 4;
+#X connect 14 0 71 0;
+#X connect 16 0 75 0;
+#X connect 18 0 19 19;
+#X connect 19 0 4 0;
+#X connect 19 1 7 0;
+#X connect 19 2 5 0;
+#X connect 19 3 6 0;
+#X connect 19 4 8 0;
+#X connect 19 5 22 0;
+#X connect 19 6 25 0;
+#X connect 19 7 23 0;
+#X connect 19 8 24 0;
+#X connect 19 9 26 0;
+#X connect 19 10 35 0;
+#X connect 19 11 36 0;
+#X connect 19 12 43 0;
+#X connect 19 13 44 0;
+#X connect 19 14 53 0;
+#X connect 19 15 54 0;
+#X connect 19 16 61 0;
+#X connect 19 17 68 0;
+#X connect 19 18 32 0;
+#X connect 19 19 18 0;
+#X connect 19 20 41 0;
+#X connect 19 21 49 0;
+#X connect 19 22 59 0;
+#X connect 19 23 65 0;
+#X connect 22 0 19 5;
+#X connect 23 0 19 7;
+#X connect 24 0 19 8;
+#X connect 25 0 19 6;
+#X connect 26 0 19 9;
+#X connect 32 0 19 18;
+#X connect 35 0 19 10;
+#X connect 36 0 19 11;
+#X connect 39 0 79 0;
+#X connect 41 0 19 20;
+#X connect 43 0 19 12;
+#X connect 44 0 19 13;
+#X connect 47 0 80 0;
+#X connect 49 0 19 21;
+#X connect 53 0 19 14;
+#X connect 54 0 19 15;
+#X connect 57 0 81 0;
+#X connect 59 0 19 22;
+#X connect 61 0 19 16;
+#X connect 63 0 82 0;
+#X connect 65 0 19 23;
+#X connect 66 0 77 0;
+#X connect 68 0 19 17;
+#X connect 69 0 73 0;
+#X connect 71 0 72 0;
+#X connect 73 0 74 0;
+#X connect 75 0 76 0;
+#X connect 77 0 78 0;
+#X connect 79 0 83 0;
+#X connect 80 0 86 0;
+#X connect 81 0 85 0;
+#X connect 82 0 84 0;
+#X coords 0 -1 1 1 800 480 1 0 0;

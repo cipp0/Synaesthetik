@@ -1,0 +1,248 @@
+#N struct 1109-template-base float x float y float w float h float
+q float r;
+#N struct 1109-template float x float y float w float h float q float
+r;
+#N struct 1110-template-base float x float y float w float h float
+q float r;
+#N struct 1110-template float x float y float w float h float q float
+r;
+#N struct 1111-template-base float x float y float w float h float
+q float r;
+#N struct 1111-template float x float y float w float h float q float
+r;
+#N struct 1112-template-base float x float y float w float h float
+q float r;
+#N struct 1112-template float x float y float w float h float q float
+r;
+#N struct 1113-template-base float x float y float w float h float
+q float r;
+#N struct 1113-template float x float y float w float h float q float
+r;
+#N struct 1114-template-base float x float y float w float h float
+q float r;
+#N struct 1114-template float x float y float w float h float q float
+r;
+#N struct 1115-template-base float x float y float w float h float
+q float r;
+#N struct 1115-template float x float y float w float h float q float
+r;
+#N canvas 377 30 1450 840 10;
+#X msg 395 -431 size \$1;
+#X floatatom 395 -460 5 50 500 0 - - -;
+#X floatatom 122 -431 5 0 0 0 value_in - -;
+#X floatatom 122 -41 5 0 0 0 value-out - -;
+#X msg 451 -431 min -250;
+#X msg 511 -431 max 1000;
+#X msg 184 -431 facecol 666;
+#X msg 329 -431 dotcol 900;
+#X msg 256 -431 basecol 999;
+#X floatatom 1004 -105 5 0 0 0 - - -;
+#X floatatom 1004 230 5 0 0 0 - - -;
+#X obj 603 -393 cnv 15 360 120 empty empty empty 20 12 0 14 -166441
+-66577 0;
+#N canvas 818 33 694 797 struct-col-to-rgb 0;
+#X floatatom 207 -90 5 0 0 0 - - -;
+#X obj 110 -45 int;
+#X floatatom 110 -20 5 0 0 0 - - -;
+#X obj 110 -70 * 0.01;
+#X obj 110 5 * 100;
+#X obj 130 50 -;
+#X obj 130 77 * 0.1;
+#X obj 130 105 int;
+#X floatatom 131 134 5 0 0 0 - - -;
+#X obj 214 318 -;
+#X obj 114 222 +;
+#X obj 131 165 * 10;
+#X floatatom 212 377 5 0 0 0 - - -;
+#X floatatom 156 373 5 0 0 0 - - -;
+#X floatatom 27 371 5 0 0 0 - - -;
+#X obj 194 -125 inlet;
+#N canvas 1008 330 786 618 rgb 0;
+#X obj 272 37 inlet;
+#X obj 349 39 inlet;
+#X obj 415 40 inlet;
+#X obj 415 112 t b f;
+#X obj 349 170 +;
+#X obj 349 195 t b f;
+#X obj 349 226 +;
+#X obj 272 89 * -65536;
+#X obj 349 90 * -256;
+#X obj 415 90 * -1;
+#X obj 349 257 - 1;
+#X obj 283 61 int;
+#X obj 358 63 int;
+#X obj 425 65 int;
+#X obj 348 294 outlet;
+#X connect 0 0 11 0;
+#X connect 1 0 12 0;
+#X connect 2 0 13 0;
+#X connect 3 0 4 0;
+#X connect 3 1 4 1;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 5 1 6 1;
+#X connect 6 0 10 0;
+#X connect 7 0 6 0;
+#X connect 8 0 4 0;
+#X connect 9 0 3 0;
+#X connect 10 0 14 0;
+#X connect 11 0 7 0;
+#X connect 12 0 8 0;
+#X connect 13 0 9 0;
+#X restore 161 610 pd rgb;
+#X obj 92 559 moses 255;
+#X obj 93 523 moses 0;
+#X obj 160 557 moses 255;
+#X obj 161 521 moses 0;
+#X obj 230 557 moses 255;
+#X obj 231 521 moses 0;
+#X obj 168 664 outlet;
+#X obj 129 26 t b f;
+#X obj 125 192 t b f;
+#X obj 211 272 t b f;
+#X obj 32 415 * 28.3333;
+#X obj 157 417 * 28.3333;
+#X obj 235 420 * 28.3333;
+#X connect 0 0 3 0;
+#X connect 0 0 5 0;
+#X connect 0 0 9 0;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 2 0 14 0;
+#X connect 3 0 1 0;
+#X connect 4 0 10 0;
+#X connect 4 0 24 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 11 0;
+#X connect 8 0 13 0;
+#X connect 9 0 12 0;
+#X connect 10 0 26 0;
+#X connect 11 0 25 0;
+#X connect 12 0 29 0;
+#X connect 13 0 28 0;
+#X connect 14 0 27 0;
+#X connect 15 0 0 0;
+#X connect 16 0 23 0;
+#X connect 17 0 16 0;
+#X connect 18 1 17 0;
+#X connect 19 0 16 1;
+#X connect 20 1 19 0;
+#X connect 21 0 16 2;
+#X connect 22 1 21 0;
+#X connect 24 0 5 0;
+#X connect 24 1 5 1;
+#X connect 25 0 10 0;
+#X connect 25 1 10 1;
+#X connect 26 0 9 0;
+#X connect 26 1 9 1;
+#X connect 27 0 18 0;
+#X connect 28 0 20 0;
+#X connect 29 0 22 0;
+#X restore 571 -106 pd struct-col-to-rgb;
+#X floatatom 614 -181 5 0 0 0 - - -;
+#X msg 613 -152 facecol \$1;
+#X obj 571 -28 cnv 15 200 200 empty \$0-canvas Canvas 20 12 0 14 -116061
+-262144 0;
+#X msg 572 -84 color \$1;
+#X obj 573 -61 s \$0-canvas;
+#X obj 122 -367 scalar-knob;
+#X obj 98 112 scalar-knob 555 999 900 120 -90 90;
+#X obj 612 -384 scalar-knob 777 555 900 100 0 9;
+#X obj 731 -384 scalar-knob 777 555 90 100 0 9;
+#X obj 850 -384 scalar-knob 777 555 9 100 0 9;
+#X obj 1004 -55 scalar-knob 90 999 900 250 0 1000;
+#N canvas 29 351 572 492 colour-mixer 0;
+#X obj 94 69 inlet;
+#X obj 241 70 inlet;
+#X obj 162 68 inlet;
+#X obj 95 271 * 100;
+#X obj 162 158 * 10;
+#X obj 95 295 +;
+#X obj 95 319 +;
+#X obj 233 327 bang;
+#X obj 95 245 int;
+#X obj 162 122 int;
+#X obj 161 236 int;
+#X obj 95 362 outlet;
+#X connect 0 0 8 0;
+#X connect 1 0 10 0;
+#X connect 1 0 7 0;
+#X connect 2 0 9 0;
+#X connect 2 0 7 0;
+#X connect 3 0 5 0;
+#X connect 4 0 5 1;
+#X connect 5 0 6 0;
+#X connect 6 0 11 0;
+#X connect 7 0 5 0;
+#X connect 7 0 6 0;
+#X connect 8 0 3 0;
+#X connect 9 0 4 0;
+#X connect 10 0 6 1;
+#X restore 612 -210 pd colour-mixer;
+#X obj 98 265 nbx 7 28 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+24 -162280 -257985 -1 0 256;
+#X text 96 297 Use the shift key for finer changes;
+#N canvas 1174 0 450 389 subpatch 0;
+#X obj 113 120 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -1 -4034 -1 0 256;
+#X obj 113 266 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -1 -4034 -1 0 256;
+#X obj 140 140 scalar-knob 555 888 333 120 -127 127;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X coords 0 -1 1 1 200 200 1 100 100;
+#X restore 1103 -355 pd subpatch;
+#X text 433 -460 Change size;
+#X text 601 -439 scalar-knob 777 555 900 100 0 9;
+#X text 602 -427 scalar-knob 777 555 99 100 0 9;
+#X text 602 -415 scalar-knob 777 555 9 100 0 9;
+#X text 986 -427 creation args: scalar-knob face-colour back-colour
+dot-colour knob-size range-min range-max;
+#X text 986 -401 creation args e.g.: scalar-knob 555 999 900 150 -90
+90;
+#X msg 98 73 size \$1;
+#X floatatom 98 44 5 50 500 0 - - -;
+#X msg 305 57 dotpos \$1;
+#X floatatom 305 37 5 0 1 0 - - -;
+#X floatatom 230 32 5 0 1 0 - - -;
+#X msg 230 56 dotsize \$1;
+#X obj 305 79 t b a;
+#X obj 70 -498 cnv 15 600 30 empty empty scalar-knob - a knob image imposed over vslider
+20 14 0 18 -66577 -257985 0;
+#X text 63 -15 there are no creation args for dotsize & dotpos \, and
+an update to size arg is required for a change to occur. warning high
+values over 1 to dotsize can swamp the screen;
+#X text 986 -457 Requires: Pd-extended \, [iem-guts/sendcanvas] to
+change GOP size an [cyclone/mousestate] to refresh the graphics;
+#X connect 0 0 18 0;
+#X connect 1 0 0 0;
+#X connect 2 0 18 0;
+#X connect 4 0 18 0;
+#X connect 5 0 18 0;
+#X connect 6 0 18 0;
+#X connect 7 0 18 0;
+#X connect 8 0 18 0;
+#X connect 9 0 23 0;
+#X connect 12 0 16 0;
+#X connect 13 0 14 0;
+#X connect 13 0 12 0;
+#X connect 13 0 23 0;
+#X connect 14 0 23 0;
+#X connect 16 0 17 0;
+#X connect 18 0 3 0;
+#X connect 19 0 25 0;
+#X connect 20 0 24 0;
+#X connect 21 0 24 1;
+#X connect 22 0 24 2;
+#X connect 23 0 10 0;
+#X connect 24 0 13 0;
+#X connect 34 0 19 0;
+#X connect 35 0 34 0;
+#X connect 36 0 40 0;
+#X connect 37 0 36 0;
+#X connect 38 0 39 0;
+#X connect 39 0 40 0;
+#X connect 40 0 35 0;
+#X connect 40 1 19 0;

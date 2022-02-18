@@ -1,0 +1,56 @@
+#N canvas 824 333 925 603 10;
+#X declare -path abstractions;
+#X obj 100 120 abcknob 0 100 0 1 0 0 45645j5j5j56 56hj56j56j56ju HALL_REVERB
+0 125 0 15 -133153 -1 -1 0 0;
+#X obj 223 120 abcknob 0 100 0 1 0 0 56j56j56j56 j5j5345326y PLATE_REVERB
+-5 125 0 15 -133153 -1 -1 0 0;
+#X obj 346 120 abcknob 0 100 0 1 0 0 bfnr56urf cvh43545 DELAY 26 125
+0 15 -133153 -1 -1 0 0;
+#X obj 469 120 abcknob 0 100 0 1 0 0 56u45h b86l678 PING_PONG_DEL -10
+125 0 15 -133153 -1 -1 0 0;
+#X obj 593 120 abcknob 0 100 0 1 0 0 48598n gfhj4545 CHORUS 20 125
+0 15 -133153 -1 -1 0 0;
+#X obj 100 300 abcknob 0 100 0 1 0 0 75g88h448 6y7y7y57 PHASER 20 125
+0 15 -133153 -1 -1 0 0;
+#X obj 223 300 abcknob 0 100 0 1 0 0 g35tg34g3 4g34g23g2 FLANGER 20
+125 0 15 -133153 -1 -1 0 0;
+#X obj 346 300 abcknob 0 100 0 1 0 0 32g2ge fwdsc23c23 BITCRUSHER 4
+125 0 15 -133153 -1 -1 0 0;
+#X obj 469 300 abcknob 0 100 0 1 0 0 h7uj34t1 fcr21t DOWNSAMPLE 8 125
+0 15 -133153 -1 -1 0 0;
+#X obj 593 300 abcknob 0 100 0 1 0 0 dj5ki764 3fg34f3 GRANULATOR 9
+125 0 15 -133153 -1 -1 0 0;
+#X obj 99 26 tgl 80 0 empty empty SEND_ONLY 4 40 0 14 -262144 -1 -1
+0 1;
+#X obj 217 28 else/note 425 50 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 FX AUX SEND;
+#X obj 597 26 else/button 100 70 255 255 255 128 128 159;
+#X obj 623 49 else/note 425 15 arial black 0 0 0 0 0 255 255 255 0
+0 BACK;
+#X obj 894 239 s \$1-aux-back;
+#X obj 823 416 declare -path abstractions;
+#X obj 126 534 fx-init \$1, f 104;
+#X connect 0 0 16 0;
+#X connect 1 0 16 1;
+#X connect 2 0 16 2;
+#X connect 3 0 16 3;
+#X connect 4 0 16 4;
+#X connect 5 0 16 5;
+#X connect 6 0 16 6;
+#X connect 7 0 16 7;
+#X connect 8 0 16 8;
+#X connect 9 0 16 9;
+#X connect 10 0 16 10;
+#X connect 12 0 14 0;
+#X connect 16 0 0 0;
+#X connect 16 1 1 0;
+#X connect 16 2 2 0;
+#X connect 16 3 3 0;
+#X connect 16 4 4 0;
+#X connect 16 5 5 0;
+#X connect 16 6 6 0;
+#X connect 16 7 7 0;
+#X connect 16 8 8 0;
+#X connect 16 9 9 0;
+#X connect 16 10 10 0;
+#X coords 0 -1 1 1 800 480 2 0 0;

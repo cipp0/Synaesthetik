@@ -1,0 +1,20 @@
+#N canvas 165 50 1116 669 10;
+#X obj 146 38 else/pic 0 syn.gif empty empty 0 0;
+#X obj 123 240 else/button 550 60 255 255 255 128 128 159;
+#X obj 123 300 else/button 550 60 255 255 255 128 128 159;
+#X obj 123 360 else/button 550 60 255 255 255 128 128 159;
+#X obj 205 154 else/note 393 24 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 Audiovisual embedded software;
+#X obj 974 224 s 1-synth-back;
+#X obj 361 254 else/note 322 24 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 AUDIO;
+#X obj 351 314 else/note 322 24 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 VISUALS;
+#X obj 361 374 else/note 322 24 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 ABOUT;
+#X obj 967 280 s about;
+#X obj 967 250 s visual;
+#X connect 1 0 5 0;
+#X connect 2 0 10 0;
+#X connect 3 0 9 0;
+#X coords 0 -1 1 1 800 480 2 0 0;

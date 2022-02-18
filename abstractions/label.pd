@@ -1,0 +1,8 @@
+#N canvas 779 468 450 300 10;
+#X obj 109 95 else/pitch2note;
+#X obj 109 124 prepend set;
+#X obj 109 158 s \$1-r;
+#X obj 109 37 inlet;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 3 0 0 0;

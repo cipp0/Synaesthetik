@@ -1,0 +1,65 @@
+#N canvas 824 333 925 603 10;
+#X declare -path abstractions;
+#X obj 49 119 abcknob 0 100 0 1 0 0 45645j5j5j56 56hj56j56j56ju HALL_REVERB
+0 125 0 15 -133153 -1 -1 12700 0;
+#X obj 172 119 abcknob 0 100 0 1 0 0 56j56j56j56 j5j5345326y PLATE_REVERB
+-5 125 0 15 -133153 -1 -1 0 0;
+#X obj 295 119 abcknob 0 100 0 1 0 0 bfnr56urf cvh43545 DELAY 26 125
+0 15 -133153 -1 -1 0 0;
+#X obj 418 119 abcknob 0 100 0 1 0 0 56u45h b86l678 PING_PONG_DEL -10
+125 0 15 -133153 -1 -1 0 0;
+#X obj 542 119 abcknob 0 100 0 1 0 0 48598n gfhj4545 CHORUS 20 125
+0 15 -133153 -1 -1 0 0;
+#X obj 49 299 abcknob 0 100 0 1 0 0 75g88h448 6y7y7y57 PHASER 20 125
+0 15 -133153 -1 -1 0 0;
+#X obj 172 299 abcknob 0 100 0 1 0 0 g35tg34g3 4g34g23g2 FLANGER 20
+125 0 15 -133153 -1 -1 0 0;
+#X obj 295 299 abcknob 0 100 0 1 0 0 32g2ge fwdsc23c23 BITCRUSHER 4
+125 0 15 -133153 -1 -1 0 0;
+#X obj 418 299 abcknob 0 100 0 1 0 0 h7uj34t1 fcr21t DOWNSAMPLE 8 125
+0 15 -133153 -1 -1 0 0;
+#X obj 542 299 abcknob 0 100 0 1 0 0 dj5ki764 3fg34f3 GRANULATOR 9
+125 0 15 -133153 -1 -1 0 0;
+#X obj 42 24 tgl 80 0 empty empty SEND_ONLY 4 40 0 14 -262144 -1 -1
+0 1;
+#X obj 152 28 else/note 425 50 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 FX SEND TO FX;
+#X obj 668 21 else/button 100 70 255 255 255 128 128 159;
+#X obj 694 44 else/note 425 15 arial black 0 0 0 0 0 255 255 255 0
+0 BACK;
+#X obj 823 416 declare -path abstractions;
+#X obj 126 534 fx-init \$1, f 104;
+#X obj 688 108 vsl 55 245 0 1 0 0 empty empty GAIN 6 9 0 18 -262144
+-1 -1 18300 1;
+#X obj 794 516 gain-init \$1;
+#X obj 893 239 s routeback;
+#X obj 658 372 hsl 128 40 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X connect 0 0 15 0;
+#X connect 1 0 15 1;
+#X connect 2 0 15 2;
+#X connect 3 0 15 3;
+#X connect 4 0 15 4;
+#X connect 5 0 15 5;
+#X connect 6 0 15 6;
+#X connect 7 0 15 7;
+#X connect 8 0 15 8;
+#X connect 9 0 15 9;
+#X connect 10 0 15 10;
+#X connect 12 0 18 0;
+#X connect 15 0 0 0;
+#X connect 15 1 1 0;
+#X connect 15 2 2 0;
+#X connect 15 3 3 0;
+#X connect 15 4 4 0;
+#X connect 15 5 5 0;
+#X connect 15 6 6 0;
+#X connect 15 7 7 0;
+#X connect 15 8 8 0;
+#X connect 15 9 9 0;
+#X connect 15 10 10 0;
+#X connect 16 0 17 0;
+#X connect 17 0 16 0;
+#X connect 17 2 19 0;
+#X connect 19 0 17 2;
+#X coords 0 -1 1 1 800 480 2 0 0;

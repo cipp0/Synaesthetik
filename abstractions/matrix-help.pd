@@ -1,0 +1,13 @@
+#N canvas 0 96 1920 984 10;
+#X obj 82 20 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X floatatom 119 164 5 0 0 0 - - -;
+#X floatatom 160 79 5 0 0 0 - - -;
+#X floatatom 155 164 5 0 0 0 - - -;
+#X msg 82 49 0 1 \$1;
+#X obj 113 117 matrix, f 158;
+#X connect 0 0 4 0;
+#X connect 2 0 5 1;
+#X connect 4 0 5 0;
+#X connect 5 0 1 0;
+#X connect 5 1 3 0;

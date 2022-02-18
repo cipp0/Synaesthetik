@@ -1,0 +1,142 @@
+#N canvas 744 75 887 851 10;
+#X obj 312 104 abcknob 0 150 0 7 0 0 \$0-lfo-freq-s \$0-lfo-freq-r
+FREQUENCY 25 -12 0 18 -133153 -1 -1 12700 0;
+#X obj 11 5 else/note 380 20 Dejavu Sans 0 0 0 0 0 255 255 255 0 0
+//////////// SINE LFO;
+#X obj 21 115 abcknob 0 90 0 1 0 0 \$0-lfo-min-s \$0-lfo-min-r Min_Value
+0 -12 0 15 -133153 -1 -1 3900 0;
+#X obj 144 115 abcknob 0 90 0 1 0 0 \$0-lfo-max-s \$0-lfo-max-r Max_Value
+0 -12 0 15 -133153 -1 -1 5000 0;
+#X obj 10 50 hradio 40 1 0 6 \$0-lfo-sin-dest-s \$0-lfo-sin-dest-r
+Destination 0 -12 0 13 -262144 -191407 -33289 3;
+#X obj 328 251 else/note 380 25 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 7;
+#X obj 321 527 cyclone/prepend set;
+#X obj 153 575 cyclone/prepend set;
+#X obj 144 212 else/note 380 16 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 0.393701;
+#X obj 23 575 cyclone/prepend set;
+#X obj 21 212 else/note 380 16 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 0.307087;
+#X obj 18 249 else/note 380 20 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 ///// TRIANGLE LFO;
+#X obj 28 359 abcknob 0 90 0 1 0 0 \$0-lfo-tri-min-s \$0-lfo-tri-min-r
+Min_Value 0 -12 0 15 -133153 -1 -1 0 0;
+#X obj 152 359 abcknob 0 90 0 1 0 0 \$0-lfo-max-s \$0-lfo-max-r Max_Value
+0 -12 0 15 -133153 -1 -1 0 0;
+#X obj 17 294 hradio 40 1 0 6 \$0-lfo-tri-dest-s \$0-lfo-tri-dest-r
+Destination 0 -12 0 13 -262144 -191407 -33289 3;
+#X obj 159 450 else/note 380 16 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 0;
+#X obj 32 450 else/note 380 16 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 0;
+#X obj 217 7 tgl 30 0 sin-on-s sin-on-r ON 7 14 0 10 -262144 -1 -1
+1 1;
+#X obj 224 249 tgl 30 0 tri-on-s tri-on-r ON 7 14 0 10 -262144 -1 -1
+0 1;
+#X obj 522 11 else/note 380 20 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 //////////// RAMP LFO;
+#X obj 532 121 abcknob 0 90 0 1 0 0 \$0-lfo-ramp-min-s \$0-lfo-ramp-min-r
+Min_Value 0 -12 0 15 -133153 -1 -1 0 0;
+#X obj 655 121 abcknob 0 90 0 1 0 0 \$0-lfo-ramp-max-s \$0-lfo-ramp-max-r
+Max_Value 0 -12 0 15 -133153 -1 -1 0 0;
+#X obj 521 56 hradio 40 1 0 6 \$0-lfo-ramp-dest-s \$0-lfo-ramp-dest-r
+Destination 0 -12 0 13 -262144 -191407 -33289 4;
+#X obj 655 218 else/note 380 16 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 0;
+#X obj 532 218 else/note 380 16 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 0;
+#X obj 529 255 else/note 380 20 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 //////// SQUARE LFO;
+#X obj 539 365 abcknob 0 90 0 1 0 0 \$0-lfo-square-min-s \$0-lfo-square-min-r
+Min_Value 0 -12 0 15 -133153 -1 -1 3000 0;
+#X obj 663 365 abcknob 0 90 0 1 0 0 \$0-lfo-square-max-s \$0-lfo-square-max-r
+Max_Value 0 -12 0 15 -133153 -1 -1 12700 0;
+#X obj 528 300 hradio 40 1 0 6 \$0-lfo-square-dest-s \$0-lfo-square-dest-r
+Destination 0 -12 0 13 -262144 -191407 -33289 2;
+#X obj 664 450 else/note 380 16 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 1;
+#X obj 540 450 else/note 380 16 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 0.23622;
+#X obj 728 13 tgl 30 0 ramp-on-s ramp-on-r ON 7 14 0 10 -262144 -1
+-1 0 1;
+#X obj 735 255 tgl 30 0 square-on-s square-on-r ON 7 14 0 10 -262144
+-1 -1 1 1;
+#X obj 297 597 cyclone/prepend set;
+#X obj 25 609 cyclone/prepend set;
+#X obj 694 513 cyclone/prepend set;
+#X obj 538 514 cyclone/prepend set;
+#X obj 684 571 cyclone/prepend set;
+#X obj 541 570 cyclone/prepend set;
+#X obj 336 10 else/note 380 50 Dejavu Sans 0 0 0 0 0 255 255 255 0
+0 LFO;
+#X obj 339 398 else/button 100 70 255 255 255 128 128 159;
+#X obj 365 421 else/note 425 15 arial black 0 0 0 0 0 255 255 255 0
+0 BACK;
+#X obj 540 638 s synth-\$1;
+#X obj 27 701 lfo-init \$1, f 129;
+#X obj 436 616 s SAVE-S;
+#X text 355 304 1:TIMBRE;
+#X text 356 317 2:COLOR;
+#X text 356 331 3:SHAPE;
+#X text 353 347 4:CUTOFF;
+#X text 347 361 5:RESONANCE;
+#X text 363 373 6:PAN;
+#X text 341 288 DESTINATIONS:;
+#X obj 501 659 s lfo-back;
+#X connect 0 0 6 0;
+#X connect 0 0 43 16;
+#X connect 2 0 9 0;
+#X connect 2 0 43 2;
+#X connect 3 0 7 0;
+#X connect 3 0 43 3;
+#X connect 4 0 43 0;
+#X connect 6 0 5 0;
+#X connect 7 0 8 0;
+#X connect 9 0 10 0;
+#X connect 12 0 34 0;
+#X connect 12 0 43 6;
+#X connect 13 0 33 0;
+#X connect 13 0 43 7;
+#X connect 14 0 43 4;
+#X connect 17 0 43 1;
+#X connect 18 0 43 5;
+#X connect 20 0 36 0;
+#X connect 20 0 43 10;
+#X connect 21 0 35 0;
+#X connect 21 0 43 11;
+#X connect 22 0 43 8;
+#X connect 26 0 38 0;
+#X connect 26 0 43 14;
+#X connect 27 0 37 0;
+#X connect 27 0 43 15;
+#X connect 28 0 43 12;
+#X connect 31 0 43 9;
+#X connect 32 0 43 13;
+#X connect 33 0 15 0;
+#X connect 34 0 16 0;
+#X connect 35 0 23 0;
+#X connect 36 0 24 0;
+#X connect 37 0 29 0;
+#X connect 38 0 30 0;
+#X connect 40 0 42 0;
+#X connect 40 0 44 0;
+#X connect 40 0 52 0;
+#X connect 43 0 4 0;
+#X connect 43 1 17 0;
+#X connect 43 2 2 0;
+#X connect 43 3 3 0;
+#X connect 43 4 14 0;
+#X connect 43 5 18 0;
+#X connect 43 6 12 0;
+#X connect 43 7 13 0;
+#X connect 43 8 22 0;
+#X connect 43 9 31 0;
+#X connect 43 10 20 0;
+#X connect 43 11 21 0;
+#X connect 43 12 28 0;
+#X connect 43 13 32 0;
+#X connect 43 14 26 0;
+#X connect 43 15 27 0;
+#X connect 43 16 0 0;
+#X coords 0 -1 1 1 800 480 2 0 0;

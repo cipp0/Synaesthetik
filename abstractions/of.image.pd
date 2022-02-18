@@ -1,0 +1,37 @@
+#N canvas 450 37 771 732 12;
+#X obj 15 10 inlet;
+#X obj 15 726 outlet;
+#X obj 733 719 outlet;
+#X text 669 724 RI;
+#X obj 15 40 ofelia d -c12 image-\$0 \; local canvas = ofCanvas(this)
+\; local args = canvas:getArgs() \; local outlet = ofOutlet(this) \;
+image\$0 = ofImage() \; local filename \, drawimage \, X \, Y \, Z
+\, H \, W = args[1] \, args[2] \, 0 \, 0 \, 0 \, 100 \, 100 \; local
+loaded \, saved \; local previousname ="me" \; \; function M.new()
+\; ofWindow.addListener("setup" \, this) \; if args[1] == nil then
+print("[of.image] : No file") \; else args[1] = filename \; M.setup()
+\; end \; end \; \; function M.free() \; ofWindow.removeListener("setup"
+\, this) \; end \; \; function M.setup() \; if filename ~= nil then
+M.open(filename) end \; end \; \; function M.allocate(list) image\$0:allocate(list[1]
+\, list[2] \, list[3]) end \; function M.clear() image\$0:clear() end
+\; function M.setimagetype(float) image\$0:setImageType(float) end
+\; function M.draw(l) drawimage =l[1] X=l[2] Y=l[3] Z=l[4] H=l[5] W=l[6]
+end \; function M.crop(l) image\$0:crop(l[1] \, l[2] \, l[3] \, l[4])
+end \; function M.cropfrom(l) image\$0:cropfrom(image\$0 \, l[1] \,
+l[2] \, l[3] \, l[4]) end \; function M.drawsubsection(l) image\$0:drawSubsection(l[1]
+\, l[2] \, l[3] \, l[4] \, l[5] \, l[6]) end \; function M.update()
+image\$0:update()end \; function M.open(string) ofSetDataPathRoot(ofCanvas(this
+\, 1):getDir()) filename = string \; if ofWindow.exists then ofDisableArbTex()
+image\$0:clear() \; loaded = image\$0:load(filename) end \; if loaded
+then print("loaded " .. filename) end \; end \; function M.save(string)
+\; if ofWindow.exists then \; saved = image\$0:save(string) end if
+saved then print("saved " .. string) end \; end \; function M.get()
+outlet:outletList(1 \, ofTable(loaded \, image\$0:getWidth() \, image\$0:getHeight()
+\, image\$0:getImageType() \, image\$0:getTexture() \, image\$0:getPixels()))
+end \; \; function M.bang() \; if drawimage == 1 then image\$0:draw(X
+\, Y \, Z \, H \, W) end \; image\$0:bind() \; outlet:outletBang(0)
+\; image\$0:unbind() \; end \;;
+#X f 103;
+#X connect 0 0 4 0;
+#X connect 4 0 1 0;
+#X connect 4 1 2 0;
