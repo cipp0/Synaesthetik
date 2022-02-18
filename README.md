@@ -1,5 +1,7 @@
-# Synaestetik
+# 🎛️🌈🔊 Synaesthetik
 Embedded system for real time sound and image generation on Raspberry Pi environment
+
+Thesis project for the [Master in Sonic Arts at the Tor Vergata University of Rome](http://mastersonicarts-eng.uniroma2.it/)
 
 
 https://user-images.githubusercontent.com/62714916/154669681-928305df-177c-4867-941d-8ed4df3f8474.mp4
@@ -38,14 +40,24 @@ https://user-images.githubusercontent.com/62714916/154669681-928305df-177c-4867-
 - 8 multi-waves LFO for each track
 - 8 Euclidean sequencers with microtonal scale calculation
 - Global transport logic with BPM control
-
+- 10 different sends to FX for each synth:
+	- Hall reverb (Reverb of the Rings module by Mutable Instruments)
+	- Plate reverb (ELSE)
+	- Delay with feedback (ELSE)
+	- Ping Pong Delay (ELSE)
+	- Chorus (ELSE)
+	- Phaser (ELSE)
+	- Flanger (ELSE)
+	- Bitcrusher (ELSE)
+	- Downsampling (ELSE)
+	- Granulator (Clone of the Clouds module by Mutable Instruments)
 
 ## Hardware needs
 
 - Raspberry Pi 4 with Raspberry OS
 - HiFiBerry DAC+ Pro 
 - 5 inch Capacitive Touch Screen
-- 1 x Mini HDMI to standard HDMI cable
+- 2 x Mini HDMI to standard HDMI cable
 - 2 x Female Jack TS Connector (optional)
 
 ![plot](/img/screen2.png)
@@ -62,5 +74,8 @@ https://user-images.githubusercontent.com/62714916/154669681-928305df-177c-4867-
 - [Mi4PD set of externals](https://github.com/TheTechnobear/Mi4Pd)
 
 ## Screenshots
-![plot](/img/screen.png)
+
+
+
+All code included in this repository is in the public domain and used for study and research purposes only
 
