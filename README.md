@@ -1,7 +1,7 @@
 # 🎛️🌈🔊 Synaesthetik
 Embedded system for real time sound and image generation on Raspberry Pi environment
 
-Thesis project for the [Master in Sonic Arts at the Tor Vergata University of Rome](http://mastersonicarts-eng.uniroma2.it/)
+Thesis project for the [Master in Sonic Arts at the Tor Vergata University of Rome](http://mastersonicarts-eng.uniroma2.it/) - [Paper](/Paper.pdf)
 
 
 https://user-images.githubusercontent.com/62714916/154669681-928305df-177c-4867-941d-8ed4df3f8474.mp4
