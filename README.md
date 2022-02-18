@@ -1,7 +1,10 @@
 # Synaestetik
 Embedded system for real time sound and image generation on Raspberry Pi environment
 
-![plot](/img/screen.png)
+
+https://user-images.githubusercontent.com/62714916/154669681-928305df-177c-4867-941d-8ed4df3f8474.mp4
+
+
 
 ## Features
 
@@ -54,4 +57,7 @@ Embedded system for real time sound and image generation on Raspberry Pi environ
 - [Else library](https://github.com/porres/pd-else)
 - [Cyclone library](https://github.com/porres/pd-cyclone)
 - [Mi4PD set of externals](https://github.com/TheTechnobear/Mi4Pd)
+
+## Screenshots
+![plot](/img/screen.png)
 
