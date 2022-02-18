@@ -6,29 +6,29 @@ Embedded system for real time sound and image generation on Raspberry Pi environ
 ## Features
 
 - 8 independent tracks with as many [Mutable Instruments Braids](https://mutable-instruments.net/modules/braids/) clone synthesizer with related synthesis engines:
-	• CS-80 style sawtooth with notch filter
-	• Wave in continuous morphing between triangular, sawtooth,
+	- CS-80 style sawtooth with notch filter
+	- Wave in continuous morphing between triangular, sawtooth,
 	square, pulse, with character control
-	• Square / sawtooth wave with PWM (Pulse width modulation)
-	• Wave that morphs between triangular and sine wave with wavefolder
-	• Pulse train with limited bandwidth with wavefolder
-	• Double square or sawtooth wave with hard sync
-	• Triple sawtooth, square, triangular or sine wave
-	• Series of three ring modulated sine waves
-	• Seven sawtooth wave swarm
-	• Sawtooth wave with comb filter
-	• Sawtooth wave with downsampling and bitcrushing
-	• Casio CZ style filtered waveforms
-	• Vocal or formant synthesis in lo-fi or hi-fi version • Harmonic oscillator
-	• FM synthesis with various feedback algorithms
-	• Plucked string (Karplus strong)
-	• Arched rope
-	• Reed and flute
-	• Bell or metal membrane
-	• Roland 808 bass drum, cymbals, and snare drum
-	• Noise processed by a tuned multimode filter • Noise processed by a dual band-pass filter • Clocked digital noise
-	• Cloud of sinusoidal grains
-	• Particle synthesis
+	- Square / sawtooth wave with PWM (Pulse width modulation)
+	- Wave that morphs between triangular and sine wave with wavefolder
+	- Pulse train with limited bandwidth with wavefolder
+	- Double square or sawtooth wave with hard sync
+	- Triple sawtooth, square, triangular or sine wave
+	- Series of three ring modulated sine waves
+	- Seven sawtooth wave swarm
+	- Sawtooth wave with comb filter
+	- Sawtooth wave with downsampling and bitcrushing
+	- Casio CZ style filtered waveforms
+	- Vocal or formant synthesis in lo-fi or hi-fi version - Harmonic oscillator
+	- FM synthesis with various feedback algorithms
+	- Plucked string (Karplus strong)
+	- Arched rope
+	- Reed and flute
+	- Bell or metal membrane
+	- Roland 808 bass drum, cymbals, and snare drum
+	- Noise processed by a tuned multimode filter - Noise processed by a dual band-pass filter - Clocked digital noise
+	- Cloud of sinusoidal grains
+	- Particle synthesis
 
 - 8 ADSR for each track
 - 8 Moog Ladder filter for each track
