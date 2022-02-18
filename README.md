@@ -48,6 +48,9 @@ https://user-images.githubusercontent.com/62714916/154669681-928305df-177c-4867-
 - 1 x Mini HDMI to standard HDMI cable
 - 2 x Female Jack TS Connector (optional)
 
+![plot](/img/screen2.png)
+
+
 ## Software needs
 
 - [Pure Data](https://puredata.info/downloads)
